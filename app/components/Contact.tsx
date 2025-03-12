@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="w-20 h-1 bg-indigo-500 mx-auto rounded-full mb-6"></div>
           <p className="text-foreground/70 max-w-2xl mx-auto">
             Have a question or want to connect? Feel free to reach out to me using the form below.
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
         </motion.div>
 
@@ -75,7 +75,7 @@ export default function Contact() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                Thank you for your message! I'll get back to you soon.
+                Thank you for your message! I&apos;ll get back to you soon.
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit}>

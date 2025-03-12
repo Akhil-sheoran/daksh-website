@@ -173,7 +173,7 @@ export default function Projects() {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <p className="text-foreground/70 mb-6">
-            These are some of my learning projects. I'm constantly working on new ideas and improving my skills!
+            These are some of my learning projects. I&apos;m constantly working on new ideas and improving my skills!
           </p>
           <motion.a
             href="#contact"

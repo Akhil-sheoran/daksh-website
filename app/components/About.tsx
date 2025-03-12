@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
+import Image from 'next/image';
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: (i: number) => ({
@@ -39,7 +39,12 @@ export default function About() {
           >
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
               <div className="aspect-[4/3] bg-gradient-to-br from-indigo-400 to-purple-600 flex items-center justify-center">
-                <span className="text-9xl text-white/90">AS</span>
+                <Image 
+                  src="/akhil.jpg"
+                  alt="Akhil Sheoran"
+                  className="w-full h-full object-cover"
+                  fill
+                />
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-full h-full bg-indigo-200 dark:bg-indigo-900/30 rounded-lg -z-10"></div>
@@ -70,8 +75,8 @@ export default function About() {
               viewport={{ once: true }}
               variants={fadeIn}
             >
-              Hi there! I'm Akhil Sheoran, a 9th grade student with a passion for technology and problem-solving. 
-              I'm currently exploring the exciting world of coding and web development.
+              Hi there! I&apos;m Akhil Sheoran, a 9th grade student with a passion for technology and problem-solving. 
+              I&apos;m currently exploring the exciting world of coding and web development.
             </motion.p>
             <motion.p 
               className="text-foreground/70 mb-4"
@@ -81,8 +86,8 @@ export default function About() {
               viewport={{ once: true }}
               variants={fadeIn}
             >
-              When I'm not coding, you can find me speedcubing - solving Rubik's cubes as fast as possible. 
-              I've been practicing this skill for several years and continue to improve my solving times.
+              When I&apos;m not coding, you can find me speedcubing - solving Rubik&apos;s cubes as fast as possible. 
+              I&apos;ve been practicing this skill for several years and continue to improve my solving times.
             </motion.p>
             <motion.p 
               className="text-foreground/70 mb-6"

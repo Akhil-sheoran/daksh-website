@@ -19,7 +19,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <h2 className="text-lg md:text-xl font-medium text-indigo-500 mb-2">
-              Hello, I'm
+              Hello, I&apos;m
             </h2>
           </motion.div>
           <motion.h1
@@ -81,9 +81,12 @@ export default function Hero() {
           <div className="relative w-72 h-72 md:w-96 md:h-96">
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 blur-2xl opacity-20 animate-pulse" />
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-indigo-500/20">
-              <div className="w-full h-full bg-indigo-100 dark:bg-indigo-900/20 flex items-center justify-center text-6xl">
-                AS
-              </div>
+              <Image 
+                src="/akhil.jpg"
+                alt="Akhil Sheoran"
+                className="w-full h-full object-cover"
+                fill
+              />
             </div>
             <motion.div
               className="absolute -bottom-4 -right-4 bg-indigo-600 text-white p-4 rounded-full shadow-lg"
